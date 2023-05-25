@@ -1,33 +1,42 @@
 /* style.css */
+
+/* Global Styles */
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #f1f1f1;
-    color: #333;
     margin: 0;
     padding: 0;
   }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header */
   
   header {
     background-color: #333;
     padding: 20px;
   }
   
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
   nav ul li {
     display: inline-block;
+    margin-right: 20px;
   }
   
   nav ul li a {
     color: #fff;
-    text-decoration: none;
-    padding: 10px;
-    margin-right: 10px;
+    font-weight: bold;
+    font-size: 16px;
   }
+  
+  /* Hero Section */
   
   #hero {
     background-image: linear-gradient(to bottom right, #008000, #00ff00);
@@ -51,8 +60,104 @@ body {
   .hero-content p {
     font-size: 24px;
     color: #fff;
+    margin-bottom: 40px;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #fff;
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #eee;
+  }
+  
+  /* About Section */
+  
+  #about {
+    background-color: #f1f1f1;
+    padding: 60px 0;
+    text-align: center;
+  }
+  
+  .about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .profile-img img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .profile-details {
+    margin-left: 40px;
+  }
+  
+  .profile-details h3 {
+    font-size: 32px;
+    color: #333;
     margin-bottom: 20px;
   }
   
-  /* Add more styles as per your design */
+  .profile-details p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  /* Services Section */
+  
+  #services {
+    padding: 60px 0;
+    text-align: center;
+  }
+  
+  .service {
+    max-width: 300px;
+    margin: 0 auto 40px;
+  }
+  
+  .service i {
+    font-size: 48px;
+    color: #008000;
+    margin-bottom: 20px;
+  }
+  
+  .service h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .service p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  /* Footer */
+  
+  footer {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer p {
+    color: #fff;
+    font-size: 14px;
+  }
+  
   
